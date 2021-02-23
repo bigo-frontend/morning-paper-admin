@@ -1,0 +1,62 @@
+// 定义通用的向下间隔
+$intervals: 0px, 5px, 10px, 20px;
+@each $interval in $intervals {
+  .space-bottom-#{$interval} {
+    margin-bottom: $interval;
+  }
+}
+
+// input通用宽度定义
+$input-width: 100px, 200px, 250px, 300px, 350px, 400px, 520px;
+@each $width in $input-width {
+  .input-width-#{$width} {
+    width: $width;
+  }
+}
+
+.fr {
+  float:right;
+}
+
+// 单行按钮样式重置
+.row-button + .row-button {
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 0px;
+}
+
+// 空白页统一容器
+.panel {
+  padding: 15px;
+}
+
+// 清除浮动
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both
+}
+
+// 表单布局
+.form-list {
+  .el-form-item {
+    display: inline-block;
+  }
+}
+
+.form-list-col {
+  .el-form-item {
+    display: inline-block;
+    width: 45%;
+  }
+}
+
+// 表单提示样式
+.form-help {
+  font-size: 14px;
+  color: #8492a6;
+}
